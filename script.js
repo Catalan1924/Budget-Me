@@ -12,7 +12,15 @@ const filterExpenseBtn = document.getElementById("filter-expense");
 
 let transactions = [];
 
+function init() {
+  const savedTransactions = localStorage.getItem("transactions");
+  if (savedTransactions) {
+    transactions = JSON.parse(savedTransactions);
+  }
 
+  updateAll();
+  setupEventListeners();
+}
 
 function setupEventListeners() {
   transactionForm.addEventListener("submit", addTransaction);
