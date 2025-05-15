@@ -19,7 +19,12 @@
             margin: auto;
         }
         
-       
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            color: black;
+            
+        }
         
         h1 {
             text-align: center;
