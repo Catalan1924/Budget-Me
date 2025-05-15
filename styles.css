@@ -1,0 +1,202 @@
+         *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav{
+            background-color:rgb(51, 51, 51);
+            padding: 30px;
+            margin: auto;
+            text-align: center;
+            font-size: larger;
+        }
+        
+        body {
+            background-color:rgb(51, 51, 51);
+            min-height: 100vh;
+            padding: 2rem;
+            margin: auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            color: black;
+            
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: black;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        
+        .card h2 {
+            font-size: 1.25rem;
+            color: #374151;
+            margin-bottom: 1rem;
+        }
+           footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position:relative;
+      width: 100%;
+      bottom: 0;
+    }
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 24px;
+    }
+    .social-icons a:hover {
+      color: #ffcc00;
+    }
+        
+        
+        .card .amount {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .income .amount {
+            color: #10b981;
+        }
+        
+        .expense .amount {
+            color: #ef4444;
+        }
+        
+        .balance .amount {
+            color: #3b82f6;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #4b5563;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.375rem;
+            font-size: 1rem;
+        }
+        
+        button {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        button:hover {
+            background-color: #2563eb;
+        }
+        
+        .transactions {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        
+        .transactions h2 {
+            font-size: 1.25rem;
+            color: #374151;
+            margin-bottom: 1rem;
+        }
+        
+        .transaction-list {
+            list-style: none;
+        }
+        
+        .transaction-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .transaction-item:last-child {
+            border-bottom: none;
+        }
+        
+        .transaction-details {
+            flex-grow: 1;
+        }
+        
+        .transaction-amount {
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+        
+        .income-text {
+            color: #10b981;
+        }
+        
+        .expense-text {
+            color: #ef4444;
+        }
+        
+        .delete-btn {
+            background-color: #ef4444;
+            color: white;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            margin-left: 1rem;
+        }
+        
+        .delete-btn:hover {
+            background-color: #dc2626;
+        }
+        
+        .filter-controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .filter-btn {
+            background-color: #e5e7eb;
+            color: #4b5563;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+        }
+        
+        .filter-btn.active {
+            background-color: #3b82f6;
+            color: white;
+        }
