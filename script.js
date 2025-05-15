@@ -157,6 +157,7 @@ function setActiveFilter(filter) {
   }
 }
 
+
 function saveTransactions() {
   localStorage.setItem("transactions", JSON.stringify(transactions));
 }
@@ -190,5 +191,6 @@ document.addEventListener("DOMContentLoaded", function () {
     invitationDetails.style.display = "block";
   });
 });
+
 
 document.addEventListener("DOMContentLoaded", init);
