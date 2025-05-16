@@ -175,21 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const eventDateDisplay = document.getElementById("display-event-date");
   const eventTimeDisplay = document.getElementById("display-event-time");
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const eventName = document.getElementById("event-name").value;
-    const numberOfPeople = document.getElementById("number-of-people").value;
-    const eventDate = document.getElementById("event-date").value;
-    const eventTime = document.getElementById("event-time").value;
-
-    eventNameDisplay.textContent = eventName;
-    numberOfPeopleDisplay.textContent = numberOfPeople;
-    eventDateDisplay.textContent = eventDate;
-    eventTimeDisplay.textContent = eventTime;
-
-    invitationDetails.style.display = "block";
-  });
+  
 });
 
 
